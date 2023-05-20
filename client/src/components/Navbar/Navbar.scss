@@ -1,0 +1,56 @@
+.Navbar {
+    height: 60px;
+    background-color: rgb(15, 1, 41);
+
+    .container {
+        height: 100%;
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        font-family: cursive;
+
+        .banner {
+            display: flex;
+            gap: 20px;
+            color: white;
+            border-radius: 10px;
+            padding: 8px 30px;
+
+            .logo1 {
+                font-size: 3rem;
+                font: bolder;
+                margin-top: 2px;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+
+.sideBar {
+    .container {
+        display: flex;
+        gap: 10;
+
+        .left-part {
+            flex: 1;
+            background-color: rgb(228, 214, 214);
+            height: 90.5vh;
+
+            .home {
+                display: flex;
+                padding: 30px;
+                font-size: 2rem;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+            }
+        }
+
+        .right-part {
+            flex: 2;
+        }
+    }
+
+}
