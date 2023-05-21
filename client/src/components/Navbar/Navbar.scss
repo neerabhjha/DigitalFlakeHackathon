@@ -29,12 +29,16 @@
 }
 
 .sideBar {
+    width: 33%;
+    position: absolute;
+
     .container {
         display: flex;
         gap: 10;
 
+
         .left-part {
-            flex: 1;
+            width: 300px;
             background-color: rgb(228, 214, 214);
             height: 90.5vh;
 

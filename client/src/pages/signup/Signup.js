@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logoImg from "../../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Signup.scss";
 import { axiosInstance } from "../../utils/axiosInstance";
 
@@ -8,6 +8,7 @@ function Signup() {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -18,6 +19,7 @@ function Signup() {
         password,
       });
       if (response.data.success) {
+        navigate("/");
         console.log(response.data);
       } else {
         console.log(response.data.message);

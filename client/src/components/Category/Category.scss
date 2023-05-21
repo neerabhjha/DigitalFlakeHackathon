@@ -1,0 +1,66 @@
+.container {
+    gap: 10;
+    top: 0;
+
+    .main-div {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        flex: 2;
+        vertical-align: top;
+        margin-left: 25%;
+        position: relative;
+        top: 10%;
+        padding: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+
+        .side-logo-div {
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            .side-logo {
+                font-size: 2rem;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.table {
+    margin-left: 25%;
+    position: relative;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+th,
+td {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+th {
+    background-color: rgb(221, 171, 84);
+}
+
+tr {
+    background-color: rgb(218, 166, 166);
+}
+
+label,
+select {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.product-img {
+    height: 40px;
+    width: 40px;
+}

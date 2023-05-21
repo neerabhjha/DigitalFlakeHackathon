@@ -34,9 +34,9 @@ const signupController = async (req, res) => {
       message: "User created successfully",
       success: true,
     });
-  } catch (e) {
+  } catch (error) {
     res.send({
-      message: e.message,
+      message: error.message,
       success: false,
     });
   }
@@ -89,7 +89,7 @@ const loginController = async (req, res) => {
 // Get data of logged in User
 const getCurUserController = async (req, res) => {
   try {
-    const user = await User.findById(req._id);
+    const user = await User.findById(req._id).populate("products categories");
     return res.send({
       success: true,
       message: "User fetched successfully",

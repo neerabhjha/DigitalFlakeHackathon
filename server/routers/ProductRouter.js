@@ -1,8 +1,12 @@
-const { ProductController } = require("../controllers/ProductController");
+const {
+  ProductController,
+  deleteProductController,
+} = require("../controllers/ProductController");
 const requireUser = require("../middlewares/requireUser");
 
 const router = require("express").Router();
 
-router.post("/createProuct", requireUser, ProductController);
+router.post("/createProduct", requireUser, ProductController);
+router.delete("/deleteProduct", requireUser, deleteProductController);
 
 module.exports = router;

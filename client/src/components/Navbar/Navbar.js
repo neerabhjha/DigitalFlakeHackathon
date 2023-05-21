@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import { TbBrandDolbyDigital } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { AiOutlineHome } from "react-icons/ai";
@@ -71,27 +71,25 @@ function Navbar() {
       <div className="sideBar">
         <div className="container">
           <div className="left-part">
-            <div className="home">
+            <div className="home" onClick={() => navigate("/home")}>
               <span>
                 <AiOutlineHome /> <span>Home</span>
               </span>
               <BsArrowRightSquareFill className="arrow" />
             </div>
-            <div className="home">
+            <div className="home" onClick={() => navigate("/home/categories")}>
               <span>
                 <BiCategory /> <span>Category</span>
               </span>
               <BsArrowRightSquareFill />
             </div>
-            <div className="home">
+            <div className="home" onClick={() => navigate("/home/products")}>
               <span>
                 <MdProductionQuantityLimits /> <span>Products</span>{" "}
               </span>
               <BsArrowRightSquareFill />
             </div>
           </div>
-
-          <div className="right-part"></div>
         </div>
       </div>
     </>

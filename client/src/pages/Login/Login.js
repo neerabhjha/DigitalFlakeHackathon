@@ -18,7 +18,7 @@ function Login() {
       });
       if (response.data.success) {
         localStorage.setItem("token", response.data.data);
-        navigate("/home");
+        window.location.href = "/home";
         console.log(response.data);
       } else {
         console.log(response.data.message);

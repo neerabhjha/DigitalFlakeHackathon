@@ -1,0 +1,51 @@
+.main-container {
+    gap: 10;
+    top: 0;
+
+    .main {
+        vertical-align: top;
+        margin-left: 25%;
+        position: relative;
+        padding: 5px;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: flex;
+
+        .side-logo {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.add-product {
+    margin-right: 20px;
+}
+
+.select {
+    width: 224px;
+}
+
+.fields {
+    display: inline;
+
+}
+
+.all-fields {
+    margin-right: 20px;
+
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+}
+
+.btn1 {
+    flex: 2;
+    top: 10%;
+    margin: 50px;
+}
